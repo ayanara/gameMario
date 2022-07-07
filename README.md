@@ -1,4 +1,4 @@
-# Game Mário Jump
+# Game Mario Jump
 
 Jogo simples de Jump usando JavaScript e HTML para iniciantes.
 

@@ -11,12 +11,35 @@
     <title>MarioJump</title>
 </head>
 <body>
-    <div class="game-board">
+    <main class="game-page">
+        <header class="page-header">
+            <p class="eyebrow">UM CLÁSSICO EM NOVA AVENTURA</p>
+            <h1>Mario <span>Jump</span></h1>
+            <p class="page-description">Desvie dos canos e veja até onde você consegue chegar.</p>
+        </header>
 
-        <img src="/imagem/pipe.png" class="pipe">
-        <img src="/imagem/mario.gif" class="mario">
-        <img src="/imagem/clouds.png" class="clouds"
+        <section class="game-card" aria-label="Área do jogo Mario Jump">
+            <div class="game-board">
+                <p class="jump-counter">Saltos <span id="jump-count" aria-live="polite">0</span></p>
 
-    </div>
+                <img src="imagem/pipe.png" class="pipe" alt="">
+                <img src="imagem/mario.gif" class="mario" alt="Mario">
+                <img src="imagem/clouds.png" class="clouds" alt="">
+
+                <div class="game-over-screen" role="dialog" aria-modal="true" aria-labelledby="game-over-message" hidden>
+                    <div class="game-over-card">
+                        <p class="game-over-eyebrow">FIM DE JOGO</p>
+                        <p id="game-over-message"></p>
+                        <div class="game-over-actions">
+                            <button class="restart-button" type="button">Jogar novamente</button>
+                            <button class="dismiss-button" type="button">Agora não</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="game-tip"><span aria-hidden="true">⌨</span> Pressione qualquer tecla para pular</p>
+    </main>
 </body>
 </html>
